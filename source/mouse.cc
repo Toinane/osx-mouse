@@ -69,7 +69,7 @@ Mouse::~Mouse() {
 	uv_mutex_destroy(&async_cond_lock);
 
 	delete event_callback;
-	delete async_resource;
+	// delete async_resource;
 
 	for(size_t i = 0; i < BUFFER_SIZE; i++) {
 		delete eventBuffer[i];
